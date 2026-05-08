@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/custom_AppTheme.Toolbar">
+
+        <TextView
+            android:id="@+id/txtToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/TextAppearance.Widget.Event.Toolbar.Title"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:text="Symptom Checker"
+            android:textColor="#FFFFFF" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/colorGrayLight"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtOptional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:text="Choose one from the following diseases"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <RelativeLayout android:id="@+id/relativeAcne" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgAcne" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtAcne" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgAcne" android:text="Acne"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeAllergies" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgAllergies" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtAllergies" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgAllergies" android:text="Allergies"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeAlzheimer" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgAlzheimer" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtAlzheimer" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgAlzheimer" android:text="Alzheimer's Disease"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeAnemia" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgAnemia" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtAnemia" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgAnemia" android:text="Anemia"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeAppendicites" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgAppendicites" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtAppendicites" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgAppendicites" android:text="Appendicitis"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeArthritis" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgArthritis" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtArthritis" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgArthritis" android:text="Arthritis"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeAsthma" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgAsthma" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtAsthma" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgAsthma" android:text="Asthma"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeBronchitis" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgBronchitis" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtBronchitis" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgBronchitis" android:text="Bronchitis"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeChickenpox" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgChickenpox" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtChickenpox" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgChickenpox" android:text="Chickenpox"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeCholera" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgCholera" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtCholera" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgCholera" android:text="Cholera"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeCommonCold" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgCommonCold" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtCommonCold" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgCommonCold" android:text="Common Cold"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeConjunctivitis" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgConjunctivitis" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtConjunctivitis" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgConjunctivitis" android:text="Conjunctivitis"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeCovid" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgCovid" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtCovid" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgCovid" android:text="COVID-19"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeDengue" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgDengue" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtDengue" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgDengue" android:text="Dengue Fever"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeDepression" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgDepression" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtDepression" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgDepression" android:text="Depression"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeDiabates" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgDiabetes" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtDiabetes" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgDiabetes" android:text="Diabetes"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeDiarrhea" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgDiarrhea" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtDiarrhea" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgDiarrhea" android:text="Diarrhea"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeDysentry" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgDysentery" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtDysentery" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgDysentery" android:text="Dysentery"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeFlu" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgFlu" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtFlu" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgFlu" android:text="Flu (Influenza)"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeFoodPoisoning" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgFoodPoisoning" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtFoodPoisoning" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgFoodPoisoning" android:text="Food Poisoning"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeHeartDisease" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgHeart" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtHeartDisease" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgHeart" android:text="Heart Disease"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeBloodPressure" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgBP" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtBloodPressure" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgBP" android:text="High Blood Pressure"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeJaundice" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgJaundice" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtJaundice" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgJaundice" android:text="Jaundice"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeKidneyStones" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgKidneyStones" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtKidneyStones" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgKidneyStones" android:text="Kidney Stones"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeMalaria" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgMalaria" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtMalaria" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgMalaria" android:text="Malaria"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeMeasles" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgMeasles" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtMeasles" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgMeasles" android:text="Measles"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeMigraine" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgMigraine" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtMigraine" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgMigraine" android:text="Migraine"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeMumps" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgMumps" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtMumps" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgMumps" android:text="Mumps"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativePneumonia" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgPneumonia" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtPneumonia" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgPneumonia" android:text="Pneumonia"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeSinusitis" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgSinusitis" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtSinusitis" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgSinusitis" android:text="Sinusitis"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeUlcer" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgUlcer" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtUlcer" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgUlcer" android:text="Stomach Ulcer"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeStroke" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgStroke" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtStroke" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgStroke" android:text="Stroke"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeTonsillitis" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgTonsillitis" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtTonsillitis" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgTonsillitis" android:text="Tonsillitis"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeTb" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgTb" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtTb" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgTb" android:text="Tuberculosis (TB)"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeTyphoid" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgTyphoid" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtTyphoid" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgTyphoid" android:text="Typhoid"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+                    <View style="@style/DiseaseDivider"/>
+
+                    <RelativeLayout android:id="@+id/relativeUti" style="@style/DiseaseListRow">
+                        <ImageView android:id="@+id/imgUti" style="@style/DiseaseIcon" />
+                        <TextView android:id="@+id/txtUti" style="@style/DiseaseText" android:layout_toRightOf="@+id/imgUti" android:text="Urinary Tract Infection"/>
+                        <ImageView style="@style/DiseaseArrow" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
